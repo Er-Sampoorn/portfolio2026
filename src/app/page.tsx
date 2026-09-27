@@ -4,22 +4,12 @@ import { MagazineAbout } from "@/components/ui/magazine-about"
 import { WorkSection } from "@/components/work-section"
 import { TimelineSection } from "@/components/timeline-section"
 import { ContactSection } from "@/components/contact-section"
-import { SmoothScroll } from "@/components/smooth-scroll"
-import { ScrollAnimations } from "@/components/scroll-animations"
-import { ParticleCanvasClient } from "@/components/particle-canvas-client"
 import { AiAssistant } from "@/components/ai-assistant"
 import { SplineSection } from "@/components/spline-section"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background relative">
-      {/* Global animation controllers */}
-      <SmoothScroll />
-      <ScrollAnimations />
-
-      {/* Three.js fixed particle background */}
-      <ParticleCanvasClient />
-
       {/* Sections */}
       <div className="relative z-10">
         <WavingPortfolioLanding
